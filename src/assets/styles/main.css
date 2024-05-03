@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .bg-page {
+      background-color: var(--aw-color-bg-page);
+    }
+    .bg-dark {
+      background-color: var(--aw-color-bg-page-dark);
+    }
+    .bg-light {
+      background-color: var(--aw-color-bg-page);
+    }
+    .text-page {
+      color: var(--aw-color-text-page);
+    }
+    .text-muted {
+      color: var(--aw-color-text-muted);
+    }
+}
+
+@layer utilities {
+    .btn {
+      @apply inline-flex items-center justify-center rounded-full border-gray-400 border bg-transparent font-medium text-center text-base text-page leading-snug transition py-3.5 px-6 md:px-8 ease-in duration-200 focus:ring-gray-500 focus:ring-offset-gray-200 focus:ring-2 focus:ring-offset-2 hover:bg-gray-100 hover:border-gray-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800 cursor-pointer;
+    }
+    /* .btn-primary {
+      @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-[#6C6965] dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+    } */
+    .btn-secondary {
+        @apply btn hover:bg-[#6C6965] hover:text-[#fbf6f1];
+    }
+}
+
+#header.scroll > div:first-child {
+    @apply bg-[#6C6965] md:backdrop-blur-md;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
+  }
+  .dark #header.scroll > div:first-child,
+  #header.scroll.dark > div:first-child {
+    @apply bg-[#6C6965] border-b border-gray-500/20;
+    box-shadow: none;
+  }

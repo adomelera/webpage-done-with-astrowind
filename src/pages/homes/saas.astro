@@ -20,6 +20,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <Fragment slot="header">
     <Header
+      isDark
       {...headerData}
       actions={[
         {
@@ -110,6 +111,7 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    isDark
     title="Use cases"
     subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
     isReversed
@@ -136,13 +138,14 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <Content
+    isDark
     isAfterContent={true}
     items={[
       {
@@ -166,13 +169,14 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <Content
+    isDark
     isReversed
     isAfterContent={true}
     items={[
@@ -197,13 +201,14 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <Content
+    isDark
     items={[
       {
         title: 'Description:',
@@ -226,7 +231,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
     </Fragment>
   </Content>
 
@@ -276,6 +281,7 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
+    isDark
     title="Frequently Asked Questions"
     items={[
       {
@@ -303,7 +309,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
     </Fragment>
   </FAQs>
 
@@ -338,12 +344,13 @@ const metadata = {
   <!-- BlogLatestPost Widget **************** -->
 
   <BlogLatestPosts
+    isDark
     id="blog"
     title="Stay informed with AstroWind's blog"
     information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
     </Fragment>
   </BlogLatestPosts>
 </Layout>
